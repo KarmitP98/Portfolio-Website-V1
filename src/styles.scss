@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #56CCF2;
+  --secondary: #76D7F6;
+  --title: #000000;
+  --subtitle: #4F4F4F;
+  --contrast-font: #FFFFFF;
+  --heading: #2F80ED;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.action-button {
+  padding: 0.5em 2em;
+
+  color: black;
+  font-size: 1.5em;
+  border-radius: 50px;
+  font-weight: 700;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.88,.01,.38,.99);
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  &.action-primary {
+    background: var(--primary);
+  }
+
+  &.action-secondary {
+    background: var(--contrast-font);
+  }
+
+}
+
+strong {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong.angular {
+  color: crimson;
+  font-weight: bold;
+}
+
+strong.firebase {
+  color: darkorange;
+  font-weight: bold;
+}
+
+strong.javas {
+  color: var(--title);
+  font-weight: bold;
+}
+
+strong.html {
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+strong.css {
+  color: purple;
+  font-weight: bold;
+}
+
