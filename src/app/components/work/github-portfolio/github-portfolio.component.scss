@@ -1,0 +1,18 @@
+section {
+  //padding-bottom: 10%;
+}
+
+.project-area {
+  display: flex;
+
+  width: 70%;
+  margin: 0 15%;
+
+  flex-flow: row wrap;
+
+  //border: 1px solid black;
+
+  justify-content: space-between;
+  //align-items: center;
+
+}

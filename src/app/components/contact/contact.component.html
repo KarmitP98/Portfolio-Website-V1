@@ -1,7 +1,46 @@
 <section>
-  <div class='hero-left'></div>
-  <div class='her-right'></div>
-  <div class='illustration-area'>
+  <div class = 'hero-left'>
+    <div class = 'content-area'>
+      <h1>Karmit Patel</h1>
+      <h4>598 Edenbrook Hill Drive, Brampton, ON, Canada</h4>
+      <h4>E: karmit199@gmail.com</h4>
+      <h4>P: +1-(647)-575-5240</h4>
+      <form #f = 'ngForm'>
+        <mat-form-field appearance = 'fill'>
+          <mat-label>Your Name</mat-label>
+          <input
+            type = 'text' name = 'name' id = 'name' [(ngModel)] = 'name' matInput required
+            placeholder = 'Your name here...'>
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = 'fill'>
+          <mat-label>Email</mat-label>
+          <input type = 'email' name = 'email' id = 'email' matInput required placeholder = 'Your email here...'>
+          <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance = 'fill'>
+          <mat-label>Message</mat-label>
+          <textarea
+            matInput placeholder = "Let's have a chat..." type = 'text' name = 'message' id = 'message' rows = '10'
+            cols = '20' required></textarea>
+        </mat-form-field>
+        <br>
+        <button class = 'action-button action-secondary' style='justify-content: center; align-items: center; display: flex'>
+          Send&nbsp;
+          <svg
+            xmlns = 'http://www.w3.org/2000/svg' height = '24px' viewBox = '0 0 24 24' width = '24px' fill = '#000000'>
+            <path d = 'M0 0h24v24H0V0z' fill = 'none'/>
+            <path
+              d = 'M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z'/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class = 'her-right'></div>
+  <div class = 'illustration-area'>
     <div class = 'hexagon'></div>
     <div class = 'hexagon'></div>
     <div class = 'hexagon'></div>

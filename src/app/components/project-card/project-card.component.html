@@ -1,0 +1,22 @@
+<div class = 'card'>
+  <div class = 'card-image'>
+    <img [src] = 'data.imageURL' [alt] = 'data.altText'>
+    Image
+    <div class='card-action'>
+      <div class='action-button action-warning action-small'>Source</div>
+      &nbsp;&nbsp;
+      <div class='action-button action-secondary action-small'>Live</div>
+    </div>
+    <div class = 'card-title'>
+      Title
+    </div>
+  </div>
+  <div class = 'card-tags'>
+    <div class = 'card-tag-title'>
+      Tags
+    </div>
+    <div class = 'tags'>
+      <span *ngFor = 'let tag of data.tags' [ngClass] = 'tag.class' class='tag'>{{tag}}</span>
+    </div>
+  </div>
+</div>

@@ -40,6 +40,17 @@
     background: var(--contrast-font);
   }
 
+  &.action-warning{
+    background: orange;
+  }
+
+  &.action-small{
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+  }
+
 }
 
 strong {
@@ -50,27 +61,27 @@ strong {
   }
 }
 
-strong.angular {
+.angular {
   color: crimson;
   font-weight: bold;
 }
 
-strong.firebase {
+.firebase {
   color: darkorange;
   font-weight: bold;
 }
 
-strong.javas {
+.javas {
   color: var(--title);
   font-weight: bold;
 }
 
-strong.html {
+.html {
   color: darkslategrey;
   font-weight: bold;
 }
 
-strong.css {
+.css {
   color: purple;
   font-weight: bold;
 }
@@ -118,3 +129,6 @@ strong.css {
   }
 
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

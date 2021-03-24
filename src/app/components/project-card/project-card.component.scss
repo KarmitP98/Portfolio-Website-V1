@@ -1,0 +1,107 @@
+.card {
+  display: flex;
+  position: relative;
+
+  flex-flow: column;
+
+  overflow: hidden;
+
+  width: 400px;
+  min-height: 300px;
+
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+
+  margin: 10% 0;
+
+}
+
+.card-image {
+  display: flex;
+  position: relative;
+
+  width: 100%;
+  height: 240px;
+
+  flex-flow: column;
+
+  border-bottom: 1px solid lightgray;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  .card-title {
+    position: absolute;
+
+    font-size: 2em;
+    font-weight: bolder;
+
+    bottom: 2%;
+    right: 2%;
+  }
+
+  .card-action{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 240px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--primary);
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(.88,.01,.38,.99);
+  }
+
+  &:hover{
+    img{
+      transform: scale(1.2);
+    }
+
+    .card-action{
+      opacity: 1;
+    }
+  }
+
+}
+
+.card-tags {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 60px;
+
+  padding: 1%;
+
+  //border: 1px solid black;
+
+  .card-tag-title {
+    padding: 1%;
+
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    //border: 1px solid black;
+  }
+
+  .tags {
+    display: flex;
+    width: 100%;
+
+    flex-flow: row wrap;
+    margin: 1%;
+    //border: 1px solid black;
+
+    .tag{
+      padding: 2px;
+      background: #2F80ED;
+
+      border-radius: 2px;
+
+      margin: 1%;
+    }
+  }
+}

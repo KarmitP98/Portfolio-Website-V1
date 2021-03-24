@@ -7,8 +7,50 @@ section {
 }
 
 .hero-left {
+  display: flex;
+
+  flex-flow: column;
+
   width: 70%;
-  background-color: var(--secondary);
+  background-color: var(--primary);
+
+  justify-content: center;
+  align-items: flex-start;
+
+  .content-area {
+    display: flex;
+    position: relative;
+
+    flex-flow: column;
+
+    margin-left: 15%;
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+
+    h4:nth-child(4) {
+      margin-bottom: 2em;
+    }
+
+    form {
+      width: 500px;
+
+      mat-form-field {
+        width: 100%;
+        color: black;
+        font-weight: bolder;
+
+        mat-label {
+          color: black;
+        }
+      }
+    }
+  }
 }
 
 .illustration-area {
@@ -124,7 +166,7 @@ section {
     transform: translate(calc(-100% - 0.25em), calc(-100% - 0.25em));
   }
   25% {
-    transform: translate(calc(-100% - 0.25em),0);
+    transform: translate(calc(-100% - 0.25em), 0);
   }
   50% {
     transform: translate(calc(-100% - 0.25em), calc(100% + 0.25em));
@@ -141,10 +183,10 @@ section {
   0% {
     transform: translate(calc(-200% - 0.5em), calc(-100% - 0.25em));
   }
-  33.33%{
+  33.33% {
     transform: translate(calc(-100% - 0.25em), calc(-100% - 0.25em));
   }
-  66.66%{
+  66.66% {
     transform: translate(0, calc(-100% - 0.25em));
   }
   100% {
@@ -168,8 +210,8 @@ section {
   0% {
     transform: translate(calc(-100% - 0.25em), calc(-200% - 0.5em));
   }
-  33.33%{
-    transform: translate(calc(-100% - 0.25em),  calc(-100% - 0.25em));
+  33.33% {
+    transform: translate(calc(-100% - 0.25em), calc(-100% - 0.25em));
   }
   66.66% {
     transform: translate(calc(-100% - 0.25em), 0);
@@ -178,3 +220,4 @@ section {
     transform: translate(0);
   }
 }
+
