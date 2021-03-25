@@ -27,11 +27,21 @@ nav {
   background-color: var(--contrast-font);
 
   #logo {
-    width: 6vh;
-    height: 6vh;
+    //width: 6vh;
+    //height: 6vh;
+    //
+    //background: url("~src/assets/Images/bee-logo.png");
+    //background-size: contain;
+    font-family: 'Audiowide', cursive;
 
-    background: url("~src/assets/Images/bee-logo.png");
-    background-size: contain;
+    font-size: 2em;
+
+    padding: 2px 8px;
+
+    color: white;
+    background: var(--subtitle);
+
+    border-radius: 5px;
 
     object-fit: contain;
     cursor: pointer;
