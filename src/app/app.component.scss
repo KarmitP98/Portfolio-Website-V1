@@ -26,3 +26,21 @@ body {
     transform: translateY(-50%) translateX(0);
   }
 }
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-1em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

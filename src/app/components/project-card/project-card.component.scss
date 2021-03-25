@@ -7,12 +7,13 @@
   overflow: hidden;
 
   width: 400px;
-  min-height: 300px;
 
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 
   margin: 10% 0;
+
+  padding: 2%;
 
 }
 
@@ -21,50 +22,64 @@
   position: relative;
 
   width: 100%;
-  height: 240px;
+  height: 150px;
 
   flex-flow: column;
 
-  border-bottom: 1px solid lightgray;
   overflow: hidden;
 
   cursor: pointer;
 
-  .card-title {
-    position: absolute;
+  border-radius: 7px;
 
-    font-size: 2em;
-    font-weight: bolder;
-
-    bottom: 2%;
-    right: 2%;
-  }
-
-  .card-action{
+  .card-action {
     position: absolute;
     display: flex;
     width: 100%;
-    height: 240px;
+    height: 150px;
 
     justify-content: center;
     align-items: center;
 
-    background: var(--primary);
+    background: rgba(#56CCF2, 0);
     opacity: 0;
 
-    transition: opacity 0.5s cubic-bezier(.88,.01,.38,.99);
+    transition: all 0.5s cubic-bezier(.88, .01, .38, .99);
   }
 
-  &:hover{
-    img{
+  img {
+    transition: all 0.5s ease-in-out;
+    width: content-box;
+  }
+
+  &:hover {
+    img {
       transform: scale(1.2);
     }
 
-    .card-action{
+    .card-action {
       opacity: 1;
+      background: rgba(#56CCF2, 0.8);
     }
   }
 
+}
+
+.card-title {
+  position: relative;
+
+  font-size: 1.5em;
+  font-weight: bolder;
+
+  width: 100%;
+
+  border-bottom: 1px solid lightgray;
+
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
 }
 
 .card-tags {
@@ -73,18 +88,14 @@
   width: 100%;
   min-height: 60px;
 
-  padding: 1%;
-
-  //border: 1px solid black;
+  padding: 2%;
 
   .card-tag-title {
-    padding: 1%;
 
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
 
-    //border: 1px solid black;
   }
 
   .tags {
@@ -95,13 +106,30 @@
     margin: 1%;
     //border: 1px solid black;
 
-    .tag{
-      padding: 2px;
-      background: #2F80ED;
 
-      border-radius: 2px;
+    .tag {
+      padding: 2px 4px;
+      background: var(--primary);
+      color: black;
+
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+
+      border-radius: 5px;
 
       margin: 1%;
     }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 300px;
   }
 }

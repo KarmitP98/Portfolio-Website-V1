@@ -58,14 +58,19 @@
   }
 
   &.scene {
-    //img {
-    //  transform: translateY(-50%);
-    //  animation: rightLoad 1.5s cubic-bezier(.88, .01, .31, 1.01);
-    //}
-
     .content-area {
-      h1, h3, button {
-        animation: load 1s cubic-bezier(.88, .01, .31, 1.01);
+      h1 {
+        animation: load 1s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1s cubic-bezier(.88, .01, .31, 1.01);
+        opacity: 1;
+      }
+
+      h3 {
+        animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
+        opacity: 1;
+      }
+
+      button {
+        animation: load 2s cubic-bezier(.88, .01, .31, 1.01), scrollDown 2s cubic-bezier(.88, .01, .31, 1.01);
         opacity: 1;
       }
     }

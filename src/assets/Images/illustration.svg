@@ -1,14 +1,14 @@
-<svg width="300" height="525" viewBox="0 0 300 525" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M75 150L10.0481 37.5L139.952 37.5L75 150Z" fill="#F2F2F2" fill-opacity="0.5"/>
-<path d="M225 150L289.952 262.5H160.048L225 150Z" fill="#56CCF2"/>
-<path d="M225 150L160.048 37.5L289.952 37.5L225 150Z" fill="#56CCF2"/>
-<path d="M150 40.625L214.952 153.125H85.0481L150 40.625Z" fill="#2F80ED"/>
-<path d="M150 265.625L85.0481 153.125H214.952L150 265.625Z" fill="#2F80ED" fill-opacity="0.5"/>
-<path d="M75 150L139.952 262.5H10.0481L75 150Z" fill="#F2F2F2"/>
-<path d="M75 375L10.0481 262.5H139.952L75 375Z" fill="#333333"/>
-<path d="M225 375L289.952 487.5H160.048L225 375Z" fill="#56CCF2"/>
-<path d="M225 375L160.048 262.5H289.952L225 375Z" fill="#56CCF2" fill-opacity="0.5"/>
-<path d="M150 265.625L214.952 378.125H85.0481L150 265.625Z" fill="#F2F2F2"/>
-<path d="M150 490.625L85.0481 378.125H214.952L150 490.625Z" fill="#2F80ED"/>
-<path d="M75 375L139.952 487.5H10.0481L75 375Z" fill="#F2F2F2"/>
+<svg fill = 'none' height = '525' viewBox = '0 0 300 525' width = '300' xmlns = 'http://www.w3.org/2000/svg'>
+  <path d = 'M75 150L10.0481 37.5L139.952 37.5L75 150Z' fill = '#F2F2F2' fill-opacity = '0.5'/>
+  <path d = 'M225 150L289.952 262.5H160.048L225 150Z' fill = '#56CCF2'/>
+  <path d = 'M225 150L160.048 37.5L289.952 37.5L225 150Z' fill = '#56CCF2'/>
+  <path d = 'M150 40.625L214.952 153.125H85.0481L150 40.625Z' fill = '#2F80ED'/>
+  <path d = 'M150 265.625L85.0481 153.125H214.952L150 265.625Z' fill = '#2F80ED' fill-opacity = '0.5'/>
+  <path d = 'M75 150L139.952 262.5H10.0481L75 150Z' fill = '#F2F2F2'/>
+  <path d = 'M75 375L10.0481 262.5H139.952L75 375Z' fill = '#333333'/>
+  <path d = 'M225 375L289.952 487.5H160.048L225 375Z' fill = '#56CCF2'/>
+  <path d = 'M225 375L160.048 262.5H289.952L225 375Z' fill = '#56CCF2' fill-opacity = '0.5'/>
+  <path d = 'M150 265.625L214.952 378.125H85.0481L150 265.625Z' fill = '#F2F2F2'/>
+  <path d = 'M150 490.625L85.0481 378.125H214.952L150 490.625Z' fill = '#2F80ED'/>
+  <path d = 'M75 375L139.952 487.5H10.0481L75 375Z' fill = '#F2F2F2'/>
 </svg>

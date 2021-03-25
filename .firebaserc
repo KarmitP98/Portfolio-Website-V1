@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "karmitp98": {
+      "hosting": {
+        "Portfolio-Website-V1": [
+          "karmitp98"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "karmitp98"
+  }
+}

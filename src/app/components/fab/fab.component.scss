@@ -2,7 +2,7 @@
   position: fixed;
   display: flex;
 
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   width: 56px;
@@ -12,7 +12,7 @@
   right: 2%;
 
   background-color: #9B51E0;
-  border-radius: 50%;
+  border-radius: 50px;
 
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
@@ -21,7 +21,37 @@
   transition: all 0.3s cubic-bezier(.88, .01, .38, .99);
 
   &:hover {
-    transform: scale(0.75);
+    transform: scale(1.25);
+
+    p {
+      display: flex;
+
+    }
+  }
+
+  .icon-button {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #9B51E0;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+
+  p {
+    margin-right: 10%;
+    display: flex;
+    font-weight: bold;
+    color: white;
+    font-size: 1.25em;
+    opacity: 1;
   }
 
   span {
@@ -47,15 +77,11 @@
 
 @keyframes lds-ripple {
   0% {
-    //top: calc(50% - 8px);
-    //left: calc(50% - 8px);
     width: 0;
     height: 0;
     opacity: 1;
   }
   100% {
-    //top: 0;
-    //left: 0;
     width: 84px;
     height: 84px;
     opacity: 0;

@@ -16,16 +16,31 @@ section {
   width: auto;
   height: 80vh;
 
-  opacity: 0;
 
   &.inScene {
-    animation: load 1s cubic-bezier(.88, .01, .31, 1.01);
-    opacity: 1;
+    .image-area {
+      animation: load 0.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 0.5s cubic-bezier(.88, .01, .31, 1.01);
+      opacity: 1;
+    }
+
+    .content-area {
+      h1 {
+        animation: load 0.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 0.5s cubic-bezier(.88, .01, .31, 1.01);
+        opacity: 1;
+      }
+
+      h3 {
+        animation: load 1s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1s cubic-bezier(.88, .01, .31, 1.01);
+        opacity: 1;
+      }
+
+      .skill-area {
+        animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
+        opacity: 1;
+      }
+    }
   }
 
-  //&.outScene {
-  //  animation: load 1s cubic-bezier(.88, .01, .31, 1.01) reverse;
-  //}
 }
 
 span.line {
@@ -43,6 +58,7 @@ span.line {
   border-radius: 10px;
 
   overflow: hidden;
+  opacity: 0;
 
 
   img {
@@ -57,6 +73,7 @@ span.line {
   h1 {
     font-size: 2em;
     font-weight: bolder;
+    opacity: 0;
   }
 
   h3 {
@@ -64,6 +81,7 @@ span.line {
     color: var(--subtitle);
 
     margin: 2em 0;
+    opacity: 0;
   }
 
   .skill-area {
@@ -73,6 +91,7 @@ span.line {
 
     width: 100%;
     justify-content: space-evenly;
+    opacity: 0;
 
 
     .skill-title {

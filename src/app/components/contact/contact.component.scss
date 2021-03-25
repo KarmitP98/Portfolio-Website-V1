@@ -49,6 +49,20 @@ section {
           color: black;
         }
       }
+
+      button {
+        svg {
+          transform-origin: center center;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          svg {
+            transform: translateX(10px);
+          }
+        }
+
+      }
     }
   }
 }

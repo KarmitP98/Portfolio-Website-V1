@@ -19,17 +19,18 @@
     justify-content: center;
 
     h1 {
-      font-size: 64px;
+      font-size: 4em;
       width: 500px;
       word-wrap: normal;
       margin-left: 20%;
-      animation: load 1s cubic-bezier(.88, .01, .31, 1.01);
+      animation: load 1s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1s cubic-bezier(.88, .01, .31, 1.01);
+      line-height: 1em;
     }
 
-    h3 {
+    button {
       margin: 2% 20%;
       color: var(--subtitle);
-      animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01);
+      animation: load 2s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
     }
 
   }

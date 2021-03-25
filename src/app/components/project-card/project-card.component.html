@@ -1,22 +1,22 @@
 <div class = 'card'>
   <div class = 'card-image'>
-    <img [src] = 'data.imageURL' [alt] = 'data.altText'>
-    Image
-    <div class='card-action'>
-      <div class='action-button action-warning action-small'>Source</div>
+    <img [alt] = 'data?.altText' [src] = 'data?.imageURL'>
+    <div class = 'card-action'>
+      <div class = 'action-button action-warning action-small'><a [href] = 'data?.githubLink'>Source</a></div>
       &nbsp;&nbsp;
-      <div class='action-button action-secondary action-small'>Live</div>
+      <div *ngIf = 'data?.liveLink' class = 'action-button action-secondary action-small'><a [href] = 'data?.liveLink'>Live</a>
+      </div>
     </div>
-    <div class = 'card-title'>
-      Title
-    </div>
+  </div>
+  <div class = 'card-title'>
+    {{data?.title}}
   </div>
   <div class = 'card-tags'>
     <div class = 'card-tag-title'>
       Tags
     </div>
     <div class = 'tags'>
-      <span *ngFor = 'let tag of data.tags' [ngClass] = 'tag.class' class='tag'>{{tag}}</span>
+      <span *ngFor = 'let tag of data?.tags' [ngClass] = '[tag?.class]' class = 'tag'>{{tag.name}}</span>
     </div>
   </div>
 </div>
