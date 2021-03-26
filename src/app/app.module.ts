@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +10,7 @@ import { environment } from '../environments/environment.prod';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AwardsComponent } from './components/awards/awards.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutMeComponent } from './components/dashboard/about-me/about-me.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -24,7 +25,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { GithubPortfolioComponent } from './components/work/github-portfolio/github-portfolio.component';
 import { HeroWorkComponent } from './components/work/hero-work/hero-work.component';
 import { WorkComponent } from './components/work/work.component';
-import { AwardsComponent } from './components/awards/awards.component';
+import { BubbleComponent } from './components/bubble/bubble.component';
 
 @NgModule( {
              declarations: [
@@ -43,7 +44,8 @@ import { AwardsComponent } from './components/awards/awards.component';
                HeroWorkComponent,
                GithubPortfolioComponent,
                ProjectCardComponent,
-               AwardsComponent
+               AwardsComponent,
+               BubbleComponent
              ],
              imports: [
                BrowserModule,
@@ -53,7 +55,7 @@ import { AwardsComponent } from './components/awards/awards.component';
                MatInputModule,
                MatIconModule,
                AngularFireModule.initializeApp( environment.firebaseConfig ),
-               MatButtonModule
+               MatButtonModule,
              ],
              providers: [],
              bootstrap: [ AppComponent ]

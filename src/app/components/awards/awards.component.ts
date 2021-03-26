@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AwardModel } from '../../models/model';
 
+declare var Rellax: any;
 @Component( {
               selector: 'app-awards',
               templateUrl: './awards.component.html',
@@ -18,6 +19,7 @@ export class AwardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const rellax = new Rellax( '.rellax' );
   }
 
 }

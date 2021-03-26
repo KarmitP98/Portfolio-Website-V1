@@ -1,0 +1,21 @@
+.bubble{
+  position: absolute;
+
+  animation: upDown 1s ease-in-out infinite alternate;
+
+  width: 100px;
+  height: 100px;
+
+  background: blue;
+
+  border-radius: 50%;
+  z-index: 0;
+
+
+}
+
+@keyframes upDown {
+  to{
+    transform: translate(0,100%);
+  }
+}

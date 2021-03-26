@@ -532,11 +532,11 @@ strong {
 }
 
 .p-firebase {
-  color: #F2C94C;
+  color: #DD4B25;
 }
 
 .p-javas {
-  color: #EDD718;
+  color: #EB5757;
 }
 
 .p-html {
@@ -637,6 +637,10 @@ strong {
   align-items: center;
 
   background-color: var(--light-background-1);
+
+  a{
+    background: transparent;
+  }
 
   h1 {
     text-transform: uppercase;
