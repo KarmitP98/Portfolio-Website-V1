@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,6 +24,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { GithubPortfolioComponent } from './components/work/github-portfolio/github-portfolio.component';
 import { HeroWorkComponent } from './components/work/hero-work/hero-work.component';
 import { WorkComponent } from './components/work/work.component';
+import { AwardsComponent } from './components/awards/awards.component';
 
 @NgModule( {
              declarations: [
@@ -40,7 +42,8 @@ import { WorkComponent } from './components/work/work.component';
                HeroComponent,
                HeroWorkComponent,
                GithubPortfolioComponent,
-               ProjectCardComponent
+               ProjectCardComponent,
+               AwardsComponent
              ],
              imports: [
                BrowserModule,
@@ -49,7 +52,8 @@ import { WorkComponent } from './components/work/work.component';
                FormsModule,
                MatInputModule,
                MatIconModule,
-               AngularFireModule.initializeApp( environment.firebaseConfig )
+               AngularFireModule.initializeApp( environment.firebaseConfig ),
+               MatButtonModule
              ],
              providers: [],
              bootstrap: [ AppComponent ]

@@ -1,0 +1,14 @@
+<div class = 'awards-area'>
+  <div class = 'banner'>
+    <span class = 'circle'></span>
+    <h1>Awards</h1>
+  </div>
+  <div class = 'awards'>
+    <div class = 'award' *ngFor='let award of awards'>
+      <div class = 'award-icon'>
+        <img [src]='award.imageURL' [alt]='award.altText'>
+      </div>
+      <p class = 'award-title'>{{award.title}}</p>
+    </div>
+  </div>
+</div>

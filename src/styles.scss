@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/app/styles/common";
+
 :root {
   --primary: #56CCF2;
   --secondary: #76D7F6;
-  --title: #000000;
-  --subtitle: #4F4F4F;
-  --contrast-font: #FFFFFF;
+  --light-font-1: #000000;
+  --light-subtitle: #333333;
+  --light-background-1: #FFFFFF;
+  --light-background-2: #F6F6F6;
   --heading: #2F80ED;
 }
 
@@ -12,208 +15,15 @@
   font-family: 'Nunito', sans-serif;
   padding: 0;
   margin: 0;
-}
-
-.action-button {
-  padding: 0.5em 2em;
-
-  color: black;
-  font-size: 1.5em;
-  border-radius: 50px;
-  font-weight: 700;
-
-  border: none;
-  background: transparent;
-
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    //transform: scale(1.05);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  &.action-primary {
-    background: var(--primary);
-  }
-
-  &.action-secondary {
-    background: var(--contrast-font);
-  }
-
-  &.action-warning {
-    background: orange;
-  }
-
-  &.action-small {
-    font-size: 1em;
-    font-weight: 700;
-    padding: 0.25em 1em;
-    text-transform: uppercase;
-  }
-
-}
-
-strong {
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.p-angular {
-  color: #BD002E;
-}
-
-.p-ionic {
-  color: #367CF7;
-}
-
-.p-react {
-  color: #48CEF7;
-}
-
-.p-firebase {
-  color: #F7A00E;
-}
-
-.p-javas {
-  color: #EDD718;
-}
-
-.p-html {
-  color: #DD4B25;
-}
-
-.p-css {
-  color: #156EAD;
-}
-
-.p-python {
-  color: #356E9F;
-}
-
-.p-mysql {
-  color: #A7AFAF;
-}
-
-.p-video {
-  color: #96B5F1;
-}
-
-.p-audio {
-  color: #F72F91;
-}
-
-.p-redux {
-  color: #7248B6;
-}
-
-.angular {
-  background-color: #BD002E;
-  color: white;
-}
-
-.ionic {
-  background-color: #367CF7;
-}
-
-.react {
-  background-color: #48CEF7;
-}
-
-.firebase {
-  background-color: #F7A00E;
-}
-
-.javas {
-  background-color: #EDD718;
-}
-
-.html {
-  background-color: #DD4B25;
-  color: white;
-}
-
-.css {
-  background-color: #156EAD;
-  color: white;
-}
-
-.python {
-  background-color: #356E9F;
-}
-
-.mysql {
-  background-color: #A7AFAF;
-}
-
-.video {
-  background-color: #96B5F1;
-}
-
-.audio {
-  background-color: #F72F91;
-}
-
-.redux {
-  background-color: #7248B6;
-}
-
-.ros {
-  background-color: black;
-  color: white;
-}
-
-.api {
-  background-color: lightgray;
-}
-
-.banner {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 20vh;
-
-  justify-content: flex-start;
-  align-items: center;
-
-
-  h1 {
-    text-transform: uppercase;
-    //color: #2F80ED;
-    letter-spacing: 0.3em;
-
-    margin-left: 15%;
-    cursor: pointer;
-    font-weight: 800;
-    background: linear-gradient(to left, var(--secondary), var(--heading));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  span.circle {
-    position: absolute;
-
-    width: 150px;
-    height: 150px;
-
-    left: 10%;
-    top: 10%;
-
-    background: rgba(#76D7F6, 0.4);
-
-    border-radius: 50%;
-
-    backdrop-filter: blur(10px);
-
-    z-index: -1;
-  }
-
+  background: var(--light-background-1);
+  color: var(--light-font-1);
 }
 
 html, body { height: 100%;
   scroll-behavior: smooth; }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+svg{
+  background: transparent;
+}

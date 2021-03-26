@@ -1,7 +1,7 @@
 <div class = 'card'>
-  <div class = 'card-image'>
+  <div class = 'card-image' [class.activated] = 'this.activated'>
     <img [alt] = 'data?.altText' [src] = 'data?.imageURL'>
-    <div class = 'card-action'>
+    <div class = 'card-action' (click)='deactivateIn()'>
       <div class = 'action-button action-warning action-small'><a [href] = 'data?.githubLink'>Source</a></div>
       &nbsp;&nbsp;
       <div *ngIf = 'data?.liveLink' class = 'action-button action-secondary action-small'><a [href] = 'data?.liveLink'>Live</a>
@@ -16,6 +16,7 @@
       Tags
     </div>
     <div class = 'tags'>
+      <span class='tag live' *ngIf='data?.liveLink'>Live</span>
       <span *ngFor = 'let tag of data?.tags' [ngClass] = '[tag?.class]' class = 'tag'>{{tag.name}}</span>
     </div>
   </div>

@@ -11,3 +11,9 @@ export class TagModel {
   name = '';
   class = '';
 }
+
+export class AwardModel {
+  title = '';
+  imageURL = '';
+  altText = '';
+}

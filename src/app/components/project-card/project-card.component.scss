@@ -6,14 +6,13 @@
 
   overflow: hidden;
 
-  width: 400px;
+  max-width: 400px;
+  min-height: 304px;
 
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
   margin: 10% 0;
-
-  padding: 2%;
 
 }
 
@@ -30,7 +29,7 @@
 
   cursor: pointer;
 
-  border-radius: 7px;
+  border-radius: 5px 5px 1px 1px;
 
   .card-action {
     position: absolute;
@@ -41,20 +40,20 @@
     justify-content: center;
     align-items: center;
 
-    background: rgba(#56CCF2, 0);
+    background-color: rgba(var(--primary), 0);
     opacity: 0;
 
-    transition: all 0.5s cubic-bezier(.88, .01, .38, .99);
+    transition: all 0.2s cubic-bezier(.88, .01, .38, .99);
   }
 
   img {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     width: content-box;
   }
 
-  &:hover {
+  &:hover, &.activated {
     img {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     .card-action {
@@ -71,11 +70,11 @@
   font-size: 1.5em;
   font-weight: bolder;
 
-  width: 100%;
+  width: available;
 
-  border-bottom: 1px solid lightgray;
 
-  text-align: right;
+  padding-left: 2%;
+  background: var(--light-background-2);
 }
 
 a {
@@ -86,31 +85,35 @@ a {
   display: flex;
   flex-flow: column;
   width: 100%;
-  min-height: 60px;
 
   padding: 2%;
+  background: var(--light-background-2);
+
+  min-height: fit-content;
+  flex-grow: 1;
 
   .card-tag-title {
 
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
-
+    background: var(--light-background-2);
   }
 
   .tags {
     display: flex;
-    width: 100%;
+    width: 96%;
 
     flex-flow: row wrap;
-    margin: 1%;
-    //border: 1px solid black;
+    background: var(--light-background-2);
+
+    justify-content: flex-start;
+    align-items: center;
 
 
+    padding: 2%;
     .tag {
       padding: 2px 4px;
-      background: var(--primary);
-      color: black;
 
       font-weight: 700;
       font-size: 1em;
@@ -118,7 +121,11 @@ a {
 
       border-radius: 5px;
 
-      margin: 1%;
+      margin: 4px;
+
+    }
+    .live{
+      background-color: limegreen;
     }
   }
 }

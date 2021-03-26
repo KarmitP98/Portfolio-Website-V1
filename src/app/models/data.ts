@@ -31,32 +31,6 @@ export const PROJECTS: ProjectModel[] =
       ]
     },
     {
-      title: 'Project Management System',
-      imageURL: 'assets/Github/pms.png',
-      altText: 'PMS',
-      githubLink: 'https://github.com/KarmitP98/Project-Management',
-      liveLink: 'https://project-management-97427.web.app',
-      tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' } ]
-    },
-    {
-      title: 'Task Manager',
-      imageURL: 'assets/Github/todo-app.png',
-      altText: 'Task Manager',
-      githubLink: 'https://github.com/KarmitP98/Todo-Application',
-      liveLink: '',
-      tags: [
-        { name: 'React', class: 'react' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Redux', class: 'redux' } ]
-    },
-    {
       title: 'Rover Vision',
       imageURL: 'assets/Github/rover-home.png',
       altText: 'Rover Home',
@@ -69,6 +43,32 @@ export const PROJECTS: ProjectModel[] =
         { name: 'HTML', class: 'html' },
         { name: 'CSS', class: 'css' },
         { name: 'MySQL', class: 'mysql' } ]
+    },
+    {
+      title: 'Portfolio Website',
+      imageURL: 'assets/Github/portfolio.png',
+      altText: 'Portfolio Image',
+      githubLink: 'https://github.com/KarmitP98/Portfolio-Website-V1',
+      liveLink: 'https://karmitp98.web.app/',
+      tags: [
+        { name: 'Angular', class: 'angular' },
+        { name: 'Javascript', class: 'javas' },
+        { name: 'HTML', class: 'html' },
+        { name: 'CSS', class: 'css' },
+        { name: 'Firebase', class: 'firebase' } ]
+    },
+    {
+      title: 'Project Management System',
+      imageURL: 'assets/Github/pms.png',
+      altText: 'PMS',
+      githubLink: 'https://github.com/KarmitP98/Project-Management',
+      liveLink: 'https://project-management-97427.web.app',
+      tags: [
+        { name: 'Angular', class: 'angular' },
+        { name: 'Javascript', class: 'javas' },
+        { name: 'HTML', class: 'html' },
+        { name: 'CSS', class: 'css' },
+        { name: 'Firebase', class: 'firebase' } ]
     },
     {
       title: 'Long Talk',
@@ -99,6 +99,19 @@ export const PROJECTS: ProjectModel[] =
       ]
     },
     {
+      title: 'Task Manager',
+      imageURL: 'assets/Github/todo-app.png',
+      altText: 'Task Manager',
+      githubLink: 'https://github.com/KarmitP98/Todo-Application',
+      liveLink: '',
+      tags: [
+        { name: 'React', class: 'react' },
+        { name: 'Javascript', class: 'javas' },
+        { name: 'HTML', class: 'html' },
+        { name: 'CSS', class: 'css' },
+        { name: 'Redux', class: 'redux' } ]
+    },
+    {
       title: 'Youtube -> MP3',
       imageURL: 'assets/Github/youtube-mp3.png',
       altText: 'Youtube to mp3',
@@ -110,15 +123,5 @@ export const PROJECTS: ProjectModel[] =
         { name: 'Video', class: 'video' },
         { name: 'Audio', class: 'audio' },
       ]
-    },
-    {
-      title: 'Selenium Bot Clicker ',
-      imageURL: 'assets/Github/bot-clicker.jpg',
-      altText: 'Bot Clicker',
-      githubLink: 'https://github.com/KarmitP98/Selenium-Tutorial',
-      liveLink: '',
-      tags: [
-        { name: 'Python', class: 'python' },
-        { name: 'API', class: 'api' } ]
     },
   ];

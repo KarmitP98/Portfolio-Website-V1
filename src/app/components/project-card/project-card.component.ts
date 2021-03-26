@@ -9,10 +9,18 @@ import { ProjectModel } from '../../models/model';
 export class ProjectCardComponent implements OnInit {
 
   @Input() data: ProjectModel | undefined;
+  activated = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deactivateIn(): void {
+    this.activated = !this.activated;
+    if ( !this.activated ) {
+      setTimeout( () => this.activated = false, 3000 );
+    }
   }
 
 }

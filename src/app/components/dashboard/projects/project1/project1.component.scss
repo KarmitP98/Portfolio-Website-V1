@@ -21,10 +21,18 @@
 
     border-radius: 20px;
 
+    height: 60vh;
+    width: available;
+
   }
 
   .content-area {
     margin-left: 15%;
+
+    background-color: transparent;
+    *{
+      background-color: transparent;
+    }
 
     h1 {
       font-size: 3em;
@@ -37,7 +45,7 @@
       height: 99px;
       word-wrap: normal;
 
-      color: var(--subtitle);
+      color: var(--light-subtitle);
 
       margin: 3em 0;
       opacity: 0;

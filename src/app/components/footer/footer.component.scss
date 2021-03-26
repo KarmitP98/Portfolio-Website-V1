@@ -25,26 +25,37 @@
 
   padding: 0 20%;
 
+  background: black;
+
+  *{
+    background: black;
+  }
+
   .link {
     display: flex;
 
     justify-content: center;
     align-items: center;
 
-    font-size: 18px;
-    color: var(--subtitle);
     width: 100%;
 
     cursor: pointer;
 
     transition: all 0.3s ease-in-out;
 
+    p{
+      background: transparent;
+      color: var(--light-subtitle);
+    }
+
     &:hover {
-      color: var(--contrast-font);
+      p{
+        color: var(--light-background-1);
+      }
 
       svg {
         path {
-          fill: var(--contrast-font);
+          fill: var(--light-background-1);
         }
       }
     }
@@ -54,7 +65,7 @@
 
       path {
         transition: all 0.3s ease-in-out;
-        fill: var(--subtitle);
+        fill: var(--light-subtitle);
       }
     }
   }

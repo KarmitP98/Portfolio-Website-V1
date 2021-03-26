@@ -1,13 +1,13 @@
-<section>
+<section class = 'hero-area'>
   <div class = 'hero-left'>
     <div class = 'content-area'>
       <h1>Karmit Patel</h1>
-      <h4>E: karmit199@gmail.com</h4>
-      <h4>P: +1-(647)-575-5240</h4>
+      <h4>E: <a href = 'mailto:karmit199@gmail.com'>karmit199@gmail.com</a></h4>
+      <h4>P: <a href = 'tel:1-647-575-5240'>+1-(647)-575-5240</a></h4>
       <br>
       <br>
       <form #f = 'ngForm' (ngSubmit) = 'handleSubmit()'>
-        <mat-form-field appearance = 'fill'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Your Name</mat-label>
           <input
             [(ngModel)] = 'name'
@@ -20,7 +20,7 @@
           <mat-icon matSuffix>person</mat-icon>
         </mat-form-field>
         <br>
-        <mat-form-field appearance = 'fill'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Email</mat-label>
           <input
             [(ngModel)] = 'email'
@@ -33,7 +33,7 @@
           <mat-icon matSuffix>email</mat-icon>
         </mat-form-field>
         <br>
-        <mat-form-field appearance = 'fill'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Message</mat-label>
           <textarea
             [(ngModel)] = 'message'
@@ -43,7 +43,7 @@
             name = 'message'
             placeholder = "Let's have a chat..."
             required
-            rows = '10'
+            rows = '5'
             type = 'text'></textarea>
         </mat-form-field>
         <br>
@@ -62,15 +62,17 @@
       </form>
     </div>
   </div>
-  <div class = 'her-right'></div>
-  <div class = 'illustration-area'>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-    <div class = 'hexagon'></div>
-  </div>
+  <div class = 'hero-right'>
+    <div class = 'illustration-area'>
+      <div class = 'hexagon-illustrations'>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+        <div class = 'hexagon'></div>
+      </div>
+    </div></div>
 </section>
