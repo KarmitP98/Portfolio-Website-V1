@@ -11,7 +11,8 @@
     </div>
   </div>
   <div class = 'navbar nav-section-2'>
-    <button mat-icon-button *ngIf='showable' (click)='opened = !opened'><mat-icon style='font-size: 2.5em; font-weight: bold'>{{opened ? 'close':'menu'}}</mat-icon></button>
+    <button mat-icon-button *ngIf='showable' (click)='opened = !opened'>
+      <mat-icon style='font-size: 2.5em; font-weight: bold'>{{opened ? 'close':'menu'}}</mat-icon></button>
     <a href = 'https://github.com/KarmitP98' *ngIf='!showable'>
       <svg fill = 'none' height = '28' viewBox = '0 0 32 33' width = '28' xmlns = 'http://www.w3.org/2000/svg'>
         <g clip-path = 'url(#clip0)'>

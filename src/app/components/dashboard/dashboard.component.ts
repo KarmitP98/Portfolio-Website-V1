@@ -13,7 +13,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     const screenY = window.innerHeight;
-    console.log( screenY );
 
     window.addEventListener( 'scroll', ( e ) => {
       const YPos = window.scrollY;
@@ -21,7 +20,6 @@ export class DashboardComponent implements OnInit {
       this.scenes[1] = YPos >= screenY * 0.5 && YPos <= screenY * 2;
       this.scenes[2] = YPos >= screenY * 1.2 && YPos <= screenY * 3;
       this.scenes[3] = YPos >= screenY * 2.2 && YPos <= screenY * 4;
-      // this.inScene.next(this.scenes);
     } );
   }
 
