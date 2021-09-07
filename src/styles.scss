@@ -27,3 +27,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 svg{
   background: transparent;
 }
+
+.active{
+  .underline{
+    transform: scaleX(1) !important;
+  }
+}

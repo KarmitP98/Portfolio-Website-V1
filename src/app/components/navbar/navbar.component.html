@@ -3,7 +3,7 @@
     <div id = 'logo' routerLink = ''>KP
     </div>
     <div class = 'links' [class.opened]='opened' (click)='opened = false'>
-      <div class = 'link' routerLink = '' routerLinkActive = 'active'><a>Home</a><span class = 'underline'></span></div>
+      <div class = 'link' routerLink = '' [routerLinkActiveOptions]="{exact: true}" routerLinkActive = 'active'><a>Home</a><span class = 'underline'></span></div>
       <div class = 'link' routerLink = '/work' routerLinkActive = 'active'><a>My Work</a><span
         class = 'underline'></span></div>
       <div class = 'link' routerLink = '/contact' routerLinkActive = 'active'><a>Contact</a><span
