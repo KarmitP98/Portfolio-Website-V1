@@ -1,0 +1,26 @@
+$primary: #56CCF2;
+$secondary: #76D7F6;
+$light-font-1: #000000;
+$light-subtitle: #333333;
+$light-background-1: #FFFFFF;
+$light-background-2: #F6F6F6;
+$heading: #2F80ED;
+
+$primary-rgb: rgb(86, 204, 242);
+$secondary-rgb: rgb(118, 215, 246);
+$light-font-1-rgb: rgb(0, 0, 0);
+$light-subtitle-rgb: rgb(51, 51, 51);
+$light-background-1-rgb: rgb(255, 255, 255);
+$light-background-2-rgb: rgb(246, 246, 246);
+$heading-rgb: rgb(47, 128, 237);
+
+@mixin cubic-transition($property, $time){
+  transition: $property $time cubic-bezier(.88, .01, .38, .99);
+}
+
+@mixin full-flex($direction, $wrap, $width, $height){
+  display: flex;
+  flex-flow: $direction $wrap;
+  width: $width;
+  height: $height;
+}

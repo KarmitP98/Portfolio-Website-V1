@@ -1,34 +1,42 @@
+@import "./src/app/styles/variables";
 .awards-area {
-  display: flex;
+  @include full-flex(column, nowrap, 100%, fit-content);
+}
 
-  flex-direction: column;
-
+.awards-strip{
   width: 100%;
-  height: fit-content;
-
+  display: grid;
+  place-items: center;
+  background: var(--primary);
 }
 
 .awards {
   display: flex;
   position: relative;
 
-  justify-content: center;
+  flex-flow: row wrap;
+
+  justify-content: space-evenly;
   align-items: center;
 
-  flex-wrap: wrap;
-
-  padding: 5% 15%;
+  padding: 5% 0;
 
   height: fit-content;
+  background: transparent;
 
-  background: var(--primary);
+  width: 80%;
 
+  gap: 1em;
+
+  @media only screen and (max-width: 930px) {
+    width: 100%;
+    flex-flow: column wrap;
+  }
 }
 
 .award {
   display: flex;
   position: relative;
-  margin: 1%;
 
   padding: 10px;
   background: var(--light-background-1);
@@ -39,8 +47,15 @@
   justify-content: space-evenly;
   align-items: center;
 
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+
+  min-width: 300px;
+  @include cubic-transition(all, 0.2s);
+
+  &:hover{
+    box-shadow: 0 16px 48px rgba(0,0,0,0.05);
+  }
 
   .award-icon {
     display: flex;
