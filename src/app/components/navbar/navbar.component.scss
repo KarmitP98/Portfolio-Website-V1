@@ -129,7 +129,7 @@ nav {
 
     flex-flow: column;
 
-    width: 500px !important;
+    width: 100% !important;
     height: 93vh;
 
     justify-content: space-evenly !important;
@@ -141,7 +141,7 @@ nav {
     top: 7vh !important;
     right: -100%;
 
-    background: rgba(white, 0.9);
+    background: rgba(#fff, 1);
 
     z-index: 10000;
 
