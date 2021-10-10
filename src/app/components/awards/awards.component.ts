@@ -20,7 +20,6 @@ export class AwardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const rellax = new Rellax('.rellax');
   }
 
 }

@@ -1,14 +1,14 @@
 {
   "hosting" : {
-    "public" : "dist/Portfolio-Website-V1",
+    "public" : "dist/Portfolio-Website-V1" ,
     "ignore" : [
-      "firebase.json",
-      "**/.*",
+      "firebase.json" ,
+      "**/.*" ,
       "**/node_modules/**"
-    ],
+    ] ,
     "rewrites" : [
       {
-        "source" : "**",
+        "source" : "**" ,
         "destination" : "/index.html"
       }
     ]
