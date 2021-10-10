@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import {Injectable} from '@angular/core';
+import {AngularFirestore} from '@angular/fire/firestore';
 
-@Injectable( {
-               providedIn: 'root'
-             } )
+@Injectable({
+  providedIn: 'root'
+})
 export class DataService {
 
-  constructor( private afs: AngularFirestore ) { }
+  constructor(private afs: AngularFirestore) { }
 
-  sendMessage( email: string, name: string, message: string ): void {
-    this.afs.collection( 'messages' )
-        .add( { email, name, message } );
+  sendMessage(email: string, name: string, message: string): void {
+    this.afs.collection('messages')
+      .add({email, name, message});
     // .then(() => this.openSnackBar('Message has been successfully.', 'close'))
     // .catch(() => this.openSnackBar('The servers are not responding. Please try again.', 'close'));
   }

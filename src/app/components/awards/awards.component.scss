@@ -1,70 +1,71 @@
 @import "./src/app/styles/variables";
+
 .awards-area {
   @include full-flex(column, nowrap, 100%, fit-content);
 }
 
-.awards-strip{
-  width: 100%;
+.awards-strip {
   display: grid;
-  place-items: center;
+  width: 100%;
   background: var(--primary);
+  place-items: center;
 }
 
 .awards {
-  display: flex;
   position: relative;
+  display: flex;
 
-  flex-flow: row wrap;
-
-  justify-content: space-evenly;
   align-items: center;
 
-  padding: 5% 0;
-
-  height: fit-content;
-  background: transparent;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 
   width: 80%;
+
+  height: fit-content;
+  padding: 5% 0;
+
+  background: transparent;
 
   gap: 1em;
 
   @media only screen and (max-width: 930px) {
-    width: 100%;
     flex-flow: column wrap;
+    width: 100%;
   }
 }
 
 .award {
-  display: flex;
   position: relative;
+  display: flex;
 
-  padding: 10px;
-  background: var(--light-background-1);
+  align-items: center;
+  justify-content: space-evenly;
 
   width: fit-content;
-  height: fit-content;
+  min-width: 300px;
 
-  justify-content: space-evenly;
-  align-items: center;
+  height: fit-content;
+  padding: 10px;
+
+  border-radius: 10px;
+  background: var(--light-background-1);
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-
-  min-width: 300px;
   @include cubic-transition(all, 0.2s);
 
-  &:hover{
-    box-shadow: 0 16px 48px rgba(0,0,0,0.05);
+  &:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.05);
   }
 
   .award-icon {
     display: flex;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
 
     padding: 10px;
 
@@ -74,9 +75,9 @@
     object-fit: contain;
   }
 
-  .award-title{
-    font-weight: 700;
+  .award-title {
     font-size: 1.2em;
+    font-weight: 700;
     padding: 0 1em;
     color: var(--light-subtitle);
   }

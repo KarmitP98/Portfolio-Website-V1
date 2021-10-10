@@ -5,13 +5,13 @@ section {
 }
 
 .context {
-  display: flex;
   position: relative;
+  display: flex;
+
+  align-items: center;
 
   flex-flow: row;
-
   justify-content: space-between;
-  align-items: center;
 
   width: auto;
   height: 80vh;
@@ -49,18 +49,18 @@ span.line {
   width: 3px;
   height: 90%;
 
-  background: var(--light-subtitle);
   border-radius: 50px;
+  background: var(--light-subtitle);
 }
 
 .image-area {
-  height: fit-content;
+  overflow: hidden;
   width: fit-content;
 
-  border-radius: 10px;
+  height: fit-content;
 
-  overflow: hidden;
   opacity: 0;
+  border-radius: 10px;
 
 
   img {
@@ -76,21 +76,21 @@ span.line {
   word-wrap: normal;
 
   h1 {
-    display: flex;
-
-    align-items: center;
     font-size: 2em;
+
     font-weight: bolder;
+    display: flex;
+    align-items: center;
     opacity: 0;
 
     .award-icon {
       display: flex;
 
-      justify-content: center;
       align-items: center;
+      justify-content: center;
 
-      height: fit-content;
       width: fit-content;
+      height: fit-content;
 
       padding: 10px;
 
@@ -107,18 +107,18 @@ span.line {
 
   h3 {
     font-size: 1.2em;
-    color: var(--light-subtitle);
     margin-top: 2em;
     opacity: 0;
+    color: var(--light-subtitle);
   }
 
   .skill-area {
     display: flex;
 
-    margin-top: 3em;
+    justify-content: space-evenly;
 
     width: 100%;
-    justify-content: space-evenly;
+    margin-top: 3em;
     opacity: 0;
 
 
@@ -142,8 +142,8 @@ span.line {
     }
 
     h3 {
-      margin-top: 1em;
       font-size: 1em;
+      margin-top: 1em;
     }
 
     .skill-area {

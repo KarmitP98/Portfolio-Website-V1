@@ -1,7 +1,7 @@
 
 .content-area {
-  display: flex;
   position: relative;
+  display: flex;
 
   flex-flow: column;
 
@@ -13,7 +13,8 @@
 
   h4 {
     font-weight: 700;
-    a{
+
+    a {
       text-decoration: none;
       color: black;
     }
@@ -23,9 +24,9 @@
     width: 500px;
 
     mat-form-field {
+      font-weight: bolder;
       width: 100%;
       color: black;
-      font-weight: bolder;
 
       mat-label {
         color: black;
@@ -34,8 +35,8 @@
 
     button {
       svg {
-        transform-origin: center center;
         transition: all 0.3s ease-in-out;
+        transform-origin: center center;
       }
 
       &:hover {

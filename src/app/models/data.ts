@@ -1,4 +1,4 @@
-import { ProjectModel } from './model';
+import {ProjectModel} from './model';
 
 export const PROJECTS: ProjectModel[] =
   [
@@ -9,11 +9,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Smart-Shoppers ',
       liveLink: 'https://smart-shoppers-2a1ab.web.app',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' },
+        {name: 'Angular', class: 'angular'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Firebase', class: 'firebase'}
       ]
     },
     {
@@ -23,11 +23,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/React-Website-1',
       liveLink: '',
       tags: [
-        { name: 'React', class: 'react' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Redux', class: 'redux' },
+        {name: 'React', class: 'react'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Redux', class: 'redux'}
       ]
     },
     {
@@ -37,12 +37,12 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Rover-Vision',
       liveLink: '',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'ROS API', class: 'ros' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'MySQL', class: 'mysql' } ]
+        {name: 'Angular', class: 'angular'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'ROS API', class: 'ros'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'MySQL', class: 'mysql'}]
     },
     {
       title: 'Portfolio Website',
@@ -51,11 +51,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Portfolio-Website-V1',
       liveLink: 'https://karmitp98.web.app/',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' } ]
+        {name: 'Angular', class: 'angular'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Firebase', class: 'firebase'}]
     },
     {
       title: 'Project Management System',
@@ -64,11 +64,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Project-Management',
       liveLink: 'https://project-management-97427.web.app',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' } ]
+        {name: 'Angular', class: 'angular'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Firebase', class: 'firebase'}]
     },
     {
       title: 'Long Talk',
@@ -77,12 +77,12 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/ChatApp',
       liveLink: 'https://chat-application-b01b5.web.app',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Ionic', class: 'ionic' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' } ]
+        {name: 'Angular', class: 'angular'},
+        {name: 'Ionic', class: 'ionic'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Firebase', class: 'firebase'}]
     },
     {
       title: 'SEMS',
@@ -91,11 +91,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Employee-Managment',
       liveLink: 'https://employee-managment-f5252.web.app',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' }
+        {name: 'Angular', class: 'angular'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Firebase', class: 'firebase'}
       ]
     },
     {
@@ -105,11 +105,11 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Todo-Application',
       liveLink: '',
       tags: [
-        { name: 'React', class: 'react' },
-        { name: 'Javascript', class: 'javas' },
-        { name: 'HTML', class: 'html' },
-        { name: 'CSS', class: 'css' },
-        { name: 'Redux', class: 'redux' } ]
+        {name: 'React', class: 'react'},
+        {name: 'Javascript', class: 'javas'},
+        {name: 'HTML', class: 'html'},
+        {name: 'CSS', class: 'css'},
+        {name: 'Redux', class: 'redux'}]
     },
     {
       title: 'Youtube -> MP3',
@@ -118,10 +118,10 @@ export const PROJECTS: ProjectModel[] =
       githubLink: 'https://github.com/KarmitP98/Youtube-Mp3',
       liveLink: '',
       tags: [
-        { name: 'Python', class: 'python' },
-        { name: 'API', class: 'api' },
-        { name: 'Video', class: 'video' },
-        { name: 'Audio', class: 'audio' },
+        {name: 'Python', class: 'python'},
+        {name: 'API', class: 'api'},
+        {name: 'Video', class: 'video'},
+        {name: 'Audio', class: 'audio'}
       ]
-    },
+    }
   ];

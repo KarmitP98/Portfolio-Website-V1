@@ -1,31 +1,31 @@
 .card {
-  display: flex;
   position: relative;
-
-  flex-flow: column;
+  display: flex;
 
   overflow: hidden;
+
+  flex-flow: column;
 
   max-width: 400px;
   min-height: 304px;
 
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10% 0;
   border-radius: 10px;
 
-  margin: 10% 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
 .card-image {
-  display: flex;
   position: relative;
-
-  width: 100%;
-  height: 150px;
-
-  flex-flow: column;
+  display: flex;
 
   overflow: hidden;
+  flex-flow: column;
+
+  width: 100%;
+
+  height: 150px;
 
   cursor: pointer;
 
@@ -34,21 +34,21 @@
   .card-action {
     position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     height: 150px;
 
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(var(--primary), 0);
+    transition: all 0.2s cubic-bezier(.88, .01, .38, .99);
     opacity: 0;
 
-    transition: all 0.2s cubic-bezier(.88, .01, .38, .99);
+    background-color: rgba(var(--primary), 0);
   }
 
   img {
-    transition: all 0.2s ease-in-out;
     width: content-box;
+    transition: all 0.2s ease-in-out;
   }
 
   &:hover, &.activated {
@@ -65,10 +65,10 @@
 }
 
 .card-title {
-  position: relative;
-
   font-size: 1.5em;
+
   font-weight: bolder;
+  position: relative;
 
   width: available;
 
@@ -84,13 +84,13 @@ a {
 .card-tags {
   display: flex;
   flex-flow: column;
+  flex-grow: 1;
+
   width: 100%;
+  min-height: fit-content;
 
   padding: 2%;
   background: var(--light-background-2);
-
-  min-height: fit-content;
-  flex-grow: 1;
 
   .card-tag-title {
 
@@ -102,29 +102,31 @@ a {
 
   .tags {
     display: flex;
-    width: 96%;
-
-    flex-flow: row wrap;
-    background: var(--light-background-2);
-
-    justify-content: flex-start;
     align-items: center;
 
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
+    width: 96%;
     padding: 2%;
+
+
+    background: var(--light-background-2);
+
     .tag {
-      padding: 2px 4px;
+      font-size: 1em;
 
       font-weight: 700;
-      font-size: 1em;
+      margin: 4px;
+      padding: 2px 4px;
+
       cursor: pointer;
 
       border-radius: 5px;
 
-      margin: 4px;
-
     }
-    .live{
+
+    .live {
       background-color: limegreen;
     }
   }

@@ -1,9 +1,15 @@
 section {
-  display: flex;
   position: relative;
+  display: flex;
 
   width: 100%;
-  height: 93vh;
+  height: 100%;
+  min-height: 93vh;
+
+  .hero-left {
+    padding: 10% 0;
+    gap: 5em;
+  }
 }
 
 .content-area {
@@ -62,8 +68,8 @@ section {
 
     h4 {
       font-size: 1.5em;
-      color: var(--light-subtitle);
       animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
+      color: var(--light-subtitle);
     }
 
     ul {

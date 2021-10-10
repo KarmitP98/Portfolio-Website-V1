@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-@Component( {
-              selector: 'app-hero-dash',
-              templateUrl: './hero.component.html',
-              styleUrls: [ './hero.component.scss' ]
-            } )
+@Component({
+  selector: 'app-hero-dash',
+  templateUrl: './hero.component.html',
+  styleUrls: ['./hero.component.scss']
+})
 export class HeroComponent implements OnInit {
 
   constructor() { }
@@ -13,7 +13,7 @@ export class HeroComponent implements OnInit {
   }
 
   scrollDown(): void {
-    window.scroll( { behavior: 'smooth' } );
-    window.scrollTo( 0, window.innerHeight );
+    window.scroll({behavior: 'smooth'});
+    window.scrollTo(0, window.innerHeight);
   }
 }

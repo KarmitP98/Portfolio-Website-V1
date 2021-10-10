@@ -14,11 +14,11 @@ $light-background-1-rgb: rgb(255, 255, 255);
 $light-background-2-rgb: rgb(246, 246, 246);
 $heading-rgb: rgb(47, 128, 237);
 
-@mixin cubic-transition($property, $time){
+@mixin cubic-transition($property, $time) {
   transition: $property $time cubic-bezier(.88, .01, .38, .99);
 }
 
-@mixin full-flex($direction, $wrap, $width, $height){
+@mixin full-flex($direction, $wrap, $width, $height) {
   display: flex;
   flex-flow: $direction $wrap;
   width: $width;
