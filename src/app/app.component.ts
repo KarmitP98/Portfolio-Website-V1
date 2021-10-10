@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {PageService} from './services/page.service';
 
 
 @Component({
@@ -9,8 +11,10 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Portfolio-Website-V1';
 
+
+  constructor(private route: ActivatedRoute, public ps: PageService) {}
+
   ngOnInit(): void {
   }
-
 
 }

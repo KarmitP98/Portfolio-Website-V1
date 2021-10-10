@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {PageService} from '../../services/page.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +10,10 @@ export class DashboardComponent implements OnInit {
 
   scenes: boolean[] = [true, false, false, false];
 
-  constructor() { }
+  constructor(private ps: PageService) { }
 
   ngOnInit(): void {
+    this.ps.updatePage('home');
     const screenY = window.innerHeight;
 
     window.addEventListener('scroll', (e) => {

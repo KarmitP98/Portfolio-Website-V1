@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {NgForm} from '@angular/forms';
 import {DataService} from '../../services/data.service';
+import {PageService} from '../../services/page.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,9 +15,10 @@ export class ContactComponent implements OnInit {
 
   @ViewChild('f', {static: false}) form: NgForm | undefined;
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private ps: PageService) { }
 
   ngOnInit(): void {
+    this.ps.updatePage('contact');
   }
 
   handleSubmit(): void {

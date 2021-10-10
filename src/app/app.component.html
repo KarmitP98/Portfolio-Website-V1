@@ -1,13 +1,10 @@
 <body>
   <app-navbar></app-navbar>
   <article>
-    <!--    <app-dashboard></app-dashboard>-->
-    <!--  <app-work></app-work>-->
-    <!--    <app-contact></app-contact>-->
     <router-outlet></router-outlet>
   </article>
   <footer>
     <app-footer></app-footer>
   </footer>
-  <app-fab></app-fab>
+  <app-fab *ngIf='(ps.getCurrentPage() |async) !== "contact"'></app-fab>
 </body>
