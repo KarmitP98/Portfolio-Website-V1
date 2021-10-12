@@ -27,6 +27,7 @@ import {HeroWorkComponent} from './components/work/hero-work/hero-work.component
 import {WorkComponent} from './components/work/work.component';
 import {BubbleComponent} from './components/bubble/bubble.component';
 import {IllustrationsComponent} from './components/illustrations/illustrations.component';
+import { LineSvgComponent } from './components/line-svg/line-svg.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {IllustrationsComponent} from './components/illustrations/illustrations.c
     ProjectCardComponent,
     AwardsComponent,
     BubbleComponent,
-    IllustrationsComponent
+    IllustrationsComponent,
+    LineSvgComponent
   ],
   imports: [
     BrowserModule,
