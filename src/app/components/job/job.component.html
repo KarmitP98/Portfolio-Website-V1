@@ -1,0 +1,14 @@
+<div class='content-area'>
+  <p class='date'>{{ job.from }} - {{ job.to }}</p>
+  <app-line-svg></app-line-svg>
+  <div class='text-content'>
+    <h1 class='title'>{{ job.title}}</h1>
+    <h4>{{ job.companyName }}</h4>
+    <p *ngIf='job.description?.length'>
+      {{job.description}}
+    </p>
+    <ul *ngIf='job.duties?.length'>
+      <li *ngFor='let duty of job.duties'>{{duty}}</li>
+    </ul>
+  </div>
+</div>

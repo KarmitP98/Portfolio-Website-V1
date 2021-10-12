@@ -27,7 +27,8 @@ import {HeroWorkComponent} from './components/work/hero-work/hero-work.component
 import {WorkComponent} from './components/work/work.component';
 import {BubbleComponent} from './components/bubble/bubble.component';
 import {IllustrationsComponent} from './components/illustrations/illustrations.component';
-import { LineSvgComponent } from './components/line-svg/line-svg.component';
+import {LineSvgComponent} from './components/line-svg/line-svg.component';
+import {JobComponent} from './components/job/job.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { LineSvgComponent } from './components/line-svg/line-svg.component';
     AwardsComponent,
     BubbleComponent,
     IllustrationsComponent,
-    LineSvgComponent
+    LineSvgComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,

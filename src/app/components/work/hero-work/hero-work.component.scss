@@ -12,48 +12,4 @@ section {
   }
 }
 
-.content-area {
-  display: grid;
 
-  width: 800px;
-  margin-left: 15%;
-
-  grid-template-rows: auto;
-  grid-template-columns: 25% auto auto;
-
-  gap: 1em;
-
-  p {
-    font-size: 1em;
-    padding-top: 1em;
-
-    animation: load 1s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1s cubic-bezier(.88, .01, .31, 1.01);
-    opacity: 1;
-  }
-
-
-  .text-content {
-    margin-left: 2em;
-
-    h1 {
-      font-size: 3em;
-      animation: load 1s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1s cubic-bezier(.88, .01, .31, 1.01);
-    }
-
-    h4 {
-      font-size: 1.5em;
-      animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
-      color: var(--light-subtitle);
-    }
-
-    ul {
-      list-style: circle;
-
-      li {
-        font-size: 1.2em;
-        animation: load 1.5s cubic-bezier(.88, .01, .31, 1.01), scrollDown 1.5s cubic-bezier(.88, .01, .31, 1.01);
-      }
-    }
-  }
-
-}

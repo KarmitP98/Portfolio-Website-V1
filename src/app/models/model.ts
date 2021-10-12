@@ -17,3 +17,12 @@ export class AwardModel {
   imageURL = '';
   altText = '';
 }
+
+export class JobModel {
+  from!: string;
+  to!: string;
+  companyName!: string;
+  title!: string;
+  description!: string;
+  duties!: string[];
+}

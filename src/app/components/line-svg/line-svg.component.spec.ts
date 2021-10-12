@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LineSvgComponent } from './line-svg.component';
+import {LineSvgComponent} from './line-svg.component';
 
 describe('LineSvgComponent', () => {
   let component: LineSvgComponent;
@@ -8,9 +8,9 @@ describe('LineSvgComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LineSvgComponent ]
+      declarations: [LineSvgComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
