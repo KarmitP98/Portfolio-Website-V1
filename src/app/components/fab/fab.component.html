@@ -1,4 +1,5 @@
-<div class='fab' routerLink='/contact'>
+<app-bubble-contact *ngIf='expanded' [close]='close' @openClose></app-bubble-contact>
+<div (click)='expanded = !expanded' *ngIf='!expanded' class='fab'>
   <div class='icon-button'>
     <svg
       fill='#FFFFFF' height='32px' style='background: transparent' viewBox='0 0 24 24' width='32px'
@@ -13,5 +14,4 @@
     <span></span>
     <span></span>
   </div>
-  <!--  <p>Contact</p>-->
 </div>

@@ -508,6 +508,11 @@
     background: orange;
   }
 
+  &.action-mail {
+    background: rgb(155, 81, 224);
+    color: var(--light-background-1)
+  }
+
   &.action-small {
     font-size: 1em;
     font-weight: 700;

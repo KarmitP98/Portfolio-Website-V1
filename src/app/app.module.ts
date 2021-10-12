@@ -29,6 +29,7 @@ import {BubbleComponent} from './components/bubble/bubble.component';
 import {IllustrationsComponent} from './components/illustrations/illustrations.component';
 import {LineSvgComponent} from './components/line-svg/line-svg.component';
 import {JobComponent} from './components/job/job.component';
+import { BubbleContactComponent } from './components/bubble-contact/bubble-contact.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {JobComponent} from './components/job/job.component';
     BubbleComponent,
     IllustrationsComponent,
     LineSvgComponent,
-    JobComponent
+    JobComponent,
+    BubbleContactComponent
   ],
   imports: [
     BrowserModule,
