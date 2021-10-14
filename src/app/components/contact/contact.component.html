@@ -1,74 +1,74 @@
-<section class='hero-area'>
-  <div class='hero-left'>
-    <div class='content-area'>
+<section class = 'hero-area'>
+  <div class = 'hero-left'>
+    <div class = 'content-area'>
       <h1>Karmit Patel</h1>
-      <h4>E: <a href='mailto:karmit199@gmail.com'>karmit199@gmail.com</a></h4>
-      <h4>P: <a href='tel:1-647-575-5240'>+1-(647)-575-5240</a></h4>
+      <h4>E: <a href = 'mailto:karmit199@gmail.com'>karmit199@gmail.com</a></h4>
+      <h4>P: <a href = 'tel:1-647-575-5240'>+1-(647)-575-5240</a></h4>
       <br>
       <br>
-      <form #f='ngForm' (ngSubmit)='handleSubmit()'>
-        <mat-form-field appearance='outline'>
+      <form #f = 'ngForm' (ngSubmit) = 'handleSubmit()'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Your Name</mat-label>
           <input
-            [(ngModel)]='name'
-            id='name'
+            [(ngModel)] = 'name'
+            id = 'name'
             matInput
-            name='name'
-            placeholder='Your name here...'
+            name = 'name'
+            placeholder = 'Your name here...'
             required
-            type='text'
+            type = 'text'
           >
           <mat-icon matSuffix>person</mat-icon>
         </mat-form-field>
         <br>
-        <mat-form-field appearance='outline'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Email</mat-label>
           <input
-            [(ngModel)]='email'
-            id='email'
+            [(ngModel)] = 'email'
+            id = 'email'
             matInput
-            name='email'
-            placeholder='Your email here...'
+            name = 'email'
+            placeholder = 'Your email here...'
             required
-            type='email'
+            type = 'email'
           >
           <mat-icon matSuffix>email</mat-icon>
         </mat-form-field>
         <br>
-        <mat-form-field appearance='outline'>
+        <mat-form-field appearance = 'outline'>
           <mat-label>Message</mat-label>
           <textarea
-            [(ngModel)]='message'
-            cols='20'
-            id='message'
+            [(ngModel)] = 'message'
+            cols = '20'
+            id = 'message'
             matInput
-            name='message'
-            placeholder="Let's have a chat..."
+            name = 'message'
+            placeholder = "Let's have a chat..."
             required
-            rows='5'
-            type='text'
+            rows = '5'
+            type = 'text'
           ></textarea>
         </mat-form-field>
         <br>
         <button
-          class='action-button action-secondary'
-          style='justify-content: center; align-items: center; display: flex'
-          type='submit'
+          class = 'action-button action-secondary'
+          style = 'justify-content: center; align-items: center; display: flex'
+          type = 'submit'
         >
           Send&nbsp;
           <svg
-            fill='#000000' height='24px' viewBox='0 0 24 24' width='24px' xmlns='http://www.w3.org/2000/svg'
+            fill = '#000000' height = '24px' viewBox = '0 0 24 24' width = '24px' xmlns = 'http://www.w3.org/2000/svg'
           >
-            <path d='M0 0h24v24H0V0z' fill='none'/>
+            <path d = 'M0 0h24v24H0V0z' fill = 'none'/>
             <path
-              d='M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z'
+              d = 'M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z'
             />
           </svg>
         </button>
       </form>
     </div>
   </div>
-  <div class='hero-right'>
-    <app-illustrations illustration='heart'></app-illustrations>
+  <div class = 'hero-right'>
+    <app-illustrations illustration = 'heart'></app-illustrations>
   </div>
 </section>

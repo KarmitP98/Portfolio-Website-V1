@@ -1,25 +1,25 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {LineSvgComponent} from './line-svg.component';
+import { LineSvgComponent } from './line-svg.component';
 
-describe('LineSvgComponent', () => {
+describe( 'LineSvgComponent', () => {
   let component: LineSvgComponent;
   let fixture: ComponentFixture<LineSvgComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [LineSvgComponent]
-    })
-      .compileComponents();
-  });
+  beforeEach( async () => {
+    await TestBed.configureTestingModule( {
+                                            declarations: [ LineSvgComponent ]
+                                          } )
+                 .compileComponents();
+  } );
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LineSvgComponent);
+  beforeEach( () => {
+    fixture = TestBed.createComponent( LineSvgComponent );
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  } );
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  it( 'should create', () => {
+    expect( component ).toBeTruthy();
+  } );
+} );

@@ -1,15 +1,15 @@
-<div class='awards-area'>
-  <div class='banner'>
-    <span class='circle' data-rellax-speed='7'></span>
+<div class = 'awards-area'>
+  <div class = 'banner'>
+    <span class = 'circle' data-rellax-speed = '7'></span>
     <h1>Certificates</h1>
   </div>
-  <div class='awards-strip'>
-    <div class='awards'>
-      <div *ngFor='let award of awards' class='award'>
-        <div class='award-icon'>
-          <img [alt]='award.altText' [src]='award.imageURL'>
+  <div class = 'awards-strip'>
+    <div class = 'awards'>
+      <div *ngFor = 'let award of awards' class = 'award'>
+        <div class = 'award-icon'>
+          <img [alt] = 'award.altText' [src] = 'award.imageURL'>
         </div>
-        <p class='award-title'>{{award.title}}</p>
+        <p class = 'award-title'>{{award.title}}</p>
       </div>
     </div>
   </div>

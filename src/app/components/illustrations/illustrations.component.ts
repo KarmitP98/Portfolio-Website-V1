@@ -1,10 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-illustrations',
-  templateUrl: './illustrations.component.html',
-  styleUrls: ['./illustrations.component.scss']
-})
+@Component( {
+              selector: 'app-illustrations',
+              templateUrl: './illustrations.component.html',
+              styleUrls: [ './illustrations.component.scss' ]
+            } )
 export class IllustrationsComponent implements OnInit {
 
   @Input() illustration = 'triangle';
@@ -15,18 +15,18 @@ export class IllustrationsComponent implements OnInit {
   }
 
   public isTriangle(): boolean {
-    return this.isIllustration('triangle');
+    return this.isIllustration( 'triangle' );
   }
 
   public isSquare(): boolean {
-    return this.isIllustration('square');
+    return this.isIllustration( 'square' );
   }
 
   public isHeart(): boolean {
-    return this.isIllustration('heart');
+    return this.isIllustration( 'heart' );
   }
 
-  public isIllustration(name: string): boolean {
+  public isIllustration( name: string ): boolean {
     return this.illustration === name;
   }
 }
