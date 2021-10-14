@@ -20,12 +20,11 @@ export class HeroWorkComponent implements OnInit, OnDestroy {
     this.sub = await this.ds.fetchAllWork().get().subscribe( async value => {
       this.loading = true;
       if ( !value.empty ) {
-        this.jobs = value.docs.slice().map( job => ( { ...job.data() } ) );
+        this.jobs = value.docs.slice().map( job => ( { ...job.data() } ) ).sort(( ( a, b ) => a.startDate > b.startDate ? -1 : 1 ) );
         for ( let i = 0; i < this.jobs.length; i++ ) {
           const data = await this.jobs[i].company.get();
           this.jobs[i].companyName = data.data()?.name;
         }
-        this.jobs = this.jobs.sort( ( ( a, b ) => a.startDate > b.startDate ? -1 : 1 ) );
       }
       this.loading = false;
     } );
