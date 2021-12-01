@@ -50,6 +50,7 @@
     </mat-form-field>
     <br>
     <button
+      [disabled] = '!f.valid'
       class = 'action-button action-mail'
       style = 'justify-content: center; align-items: center; display: flex'
       type = 'submit'

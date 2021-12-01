@@ -32,5 +32,5 @@ export class FabComponent implements OnInit {
 
   close = () => {
     this.expanded = false;
-  };
+  }
 }

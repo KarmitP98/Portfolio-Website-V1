@@ -22,10 +22,11 @@ export class BubbleContactComponent implements OnInit {
   }
 
   handleSubmit(): void {
-    const { email, name, message }: any = this;
+    const { email, name, message, close }: any = this;
     if ( email && name && message ) {
       this.dataService.sendMessage( email, name, message );
       this.form?.resetForm();
+      close();
     }
   }
 
