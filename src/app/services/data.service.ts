@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+import { AngularFireFunctions } from '@angular/fire/compat/functions';
 import { JobModel } from '../models/model';
 
 @Injectable( {
@@ -7,11 +8,11 @@ import { JobModel } from '../models/model';
              } )
 export class DataService {
 
-  constructor( private afs: AngularFirestore ) { }
+  constructor( private afs: AngularFirestore, private aff: AngularFireFunctions ) { }
 
   sendMessage( email: string, name: string, message: string ): void {
     this.afs.collection( 'messages' )
-        .add( { email, name, message } );
+        .add( { email, name, message } )
   }
 
   fetchAllWork(): AngularFirestoreCollection<JobModel> {
