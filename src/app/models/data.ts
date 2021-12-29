@@ -17,18 +17,18 @@ export const PROJECTS: ProjectModel[] =
       ]
     },
     {
-      title: 'React Website',
-      imageURL: 'assets/Github/react-website.png',
-      altText: 'React Website',
-      githubLink: 'https://github.com/KarmitP98/React-Website-1',
-      liveLink: '',
+      title: 'Snazzy Chat',
+      imageURL: 'assets/mockups/Mask%20Group.png',
+      altText: 'Chat application',
+      githubLink: 'https://github.com/KarmitP98/ChatApp',
+      liveLink: 'https://baatein-7a.web.app/login',
       tags: [
-        { name: 'React', class: 'react' },
+        { name: 'Angular', class: 'angular' },
+        { name: 'Ionic', class: 'ionic' },
         { name: 'Javascript', class: 'javas' },
         { name: 'HTML', class: 'html' },
         { name: 'CSS', class: 'css' },
-        { name: 'Redux', class: 'redux' }
-      ]
+        { name: 'Firebase', class: 'firebase' } ]
     },
     {
       title: 'Rover Vision',
@@ -71,18 +71,18 @@ export const PROJECTS: ProjectModel[] =
         { name: 'Firebase', class: 'firebase' } ]
     },
     {
-      title: 'Long Talk',
-      imageURL: 'assets/Github/long-talk.png',
-      altText: 'Chat application',
-      githubLink: 'https://github.com/KarmitP98/ChatApp',
-      liveLink: 'https://chat-application-b01b5.web.app',
+      title: 'React Website',
+      imageURL: 'assets/Github/react-website.png',
+      altText: 'React Website',
+      githubLink: 'https://github.com/KarmitP98/React-Website-1',
+      liveLink: '',
       tags: [
-        { name: 'Angular', class: 'angular' },
-        { name: 'Ionic', class: 'ionic' },
+        { name: 'React', class: 'react' },
         { name: 'Javascript', class: 'javas' },
         { name: 'HTML', class: 'html' },
         { name: 'CSS', class: 'css' },
-        { name: 'Firebase', class: 'firebase' } ]
+        { name: 'Redux', class: 'redux' }
+      ]
     },
     {
       title: 'SEMS',
