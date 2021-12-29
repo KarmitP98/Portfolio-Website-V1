@@ -28,5 +28,6 @@ module.exports = {
     "quotes": ["off", "double"],
     "import/no-unresolved": 0,
     "indent": 0,
+    "linebreak-style": "off",
   },
 };
