@@ -3,7 +3,7 @@
     <div id = 'logo' routerLink = ''>KP</div>
     <div (click) = 'opened = false' [class.opened] = 'opened' class = 'links'>
       <div
-        *ngFor = 'let link of navBarLinks' [routerLinkActiveOptions] = 'link.routerLinkOptions' [routerLinkActive] = 'link.routerLinkActive'
+        *ngFor = 'let link of navBarLinks' [routerLinkActiveOptions] = 'link.routerLinkOptions' routerLinkActive='active'
         [routerLink] = 'link.routerLink' class = 'link'>
         {{link.name}}
       </div>
