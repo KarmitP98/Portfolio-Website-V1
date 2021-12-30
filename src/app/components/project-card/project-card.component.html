@@ -2,11 +2,12 @@
   <div [class.activated] = 'this.activated' class = 'card-image'>
     <img [alt] = 'data?.altText' [src] = 'data?.imageURL'>
     <div (click) = 'deactivateIn()' class = 'card-action'>
-      <div class = 'action-button action-warning action-small'><a [href] = 'data?.githubLink'>Source</a></div>
-      &nbsp;&nbsp;
-      <div *ngIf = 'data?.liveLink' class = 'action-button action-secondary action-small'><a
-        [href] = 'data?.liveLink'
-      >Live</a>
+      <div class = 'actions'>
+        <div class = 'action-button action-warning action-small'><a [href] = 'data?.githubLink'>Source</a></div>
+        <div *ngIf = 'data?.liveLink' class = 'action-button action-secondary action-small'><a
+          [href] = 'data?.liveLink'
+        >Live</a>
+        </div>
       </div>
     </div>
   </div>
