@@ -9,7 +9,7 @@
   display: flex;
 
   width: 100%;
-  min-height: 93vh;
+  min-height: 100vh;
 
   background: var(--light-background-1);
 
@@ -23,7 +23,7 @@
     width: 70%;
     height: fit-content;
 
-    min-height: 93vh;
+    min-height: 100vh;
 
     background: var(--primary);
 
@@ -58,7 +58,7 @@
     position: relative;
     width: 30%;
     height: 100%;
-    min-height: 93vh;
+    min-height: 100vh;
 
     background: var(--light-background-1);
   }
@@ -728,7 +728,7 @@ strong {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1024px) {
   .hero-area {
     .hero-left {
       width: 100%;
