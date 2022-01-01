@@ -10,6 +10,11 @@
   height: 100vh;
 
   background: var(--primary);
+  //background-image: url("~src/assets/mockups/Light.png");
+  //background-repeat: no-repeat;
+  //background-size: auto 80%;
+  //background-position: right;
+  //background-attachment: fixed;
 
   &.scene {
     .content-area {
@@ -28,14 +33,20 @@
         opacity: 1;
       }
     }
+
+    img {
+      display: block;
+      animation: bottom-load 1s cubic-bezier(.88, .01, .31, 1.01), load 1s cubic-bezier(.88, .01, .31, 1.01);
+    }
   }
 
 }
 
 img {
-  width: available;
+  width: fit-content;
   height: 80vh;
   margin-left: 15%;
+  display: none;
 }
 
 .content-area {
@@ -67,5 +78,14 @@ img {
   button {
     opacity: 0;
     justify-self: flex-end;
+  }
+}
+
+@keyframes bottom-load {
+  0% {
+    transform: translateY(200%);
+  }
+  90% {
+    transform: translateY(-10%);
   }
 }

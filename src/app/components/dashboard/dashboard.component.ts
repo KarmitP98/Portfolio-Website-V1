@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
       const YPos = window.scrollY;
       this.scenes[0] = YPos >= 0 && YPos <= screenY * 1.5;
       this.scenes[1] = YPos >= screenY * 0.5 && YPos <= screenY * 2;
-      this.scenes[2] = YPos >= screenY * 1.2 && YPos <= screenY * 3;
+      this.scenes[2] = YPos >= screenY * 1.3 && YPos <= screenY * 3;
       this.scenes[3] = YPos >= screenY * 2.2 && YPos <= screenY * 4;
     } );
   }

@@ -23,7 +23,6 @@
 
     transform: translateY(-50%);
     border-radius: 20px;
-
   }
 
   .content-area {
@@ -83,6 +82,18 @@
         opacity: 1;
       }
     }
+    img{
+      animation: load-left 1s cubic-bezier(.88, .01, .31, 1.01), load 1s cubic-bezier(.88, .01, .31, 1.01);
+    }
   }
 
+}
+
+@keyframes load-left {
+  0%{
+    transform: translateX(200%) translateY(-50%);
+  }
+  90%{
+    transform: translateX(-10%) translateY(-50%);
+  }
 }
