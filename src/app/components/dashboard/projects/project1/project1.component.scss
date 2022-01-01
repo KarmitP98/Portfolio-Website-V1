@@ -83,13 +83,13 @@
       }
     }
     img{
-      animation: load-left 1s cubic-bezier(.88, .01, .31, 1.01), load 1s cubic-bezier(.88, .01, .31, 1.01);
+      animation: left-load 1s cubic-bezier(.88, .01, .31, 1.01), load 1s cubic-bezier(.88, .01, .31, 1.01);
     }
   }
 
 }
 
-@keyframes load-left {
+@keyframes left-load {
   0%{
     transform: translateX(200%) translateY(-50%);
   }
