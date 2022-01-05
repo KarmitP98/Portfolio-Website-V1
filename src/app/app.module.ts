@@ -30,6 +30,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { GithubPortfolioComponent } from './components/work/github-portfolio/github-portfolio.component';
 import { HeroWorkComponent } from './components/work/hero-work/hero-work.component';
 import { WorkComponent } from './components/work/work.component';
+import { GithubLinkComponent } from './components/work/github-link/github-link.component';
 
 @NgModule( {
              declarations: [
@@ -53,7 +54,8 @@ import { WorkComponent } from './components/work/work.component';
                IllustrationsComponent,
                LineSvgComponent,
                JobComponent,
-               BubbleContactComponent
+               BubbleContactComponent,
+               GithubLinkComponent
              ],
              imports: [
                BrowserModule,

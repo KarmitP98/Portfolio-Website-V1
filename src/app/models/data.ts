@@ -18,7 +18,7 @@ export const PROJECTS: ProjectModel[] =
     },
     {
       title: 'Snazzy Chat',
-      imageURL: 'assets/mockups/Mask%20Group.png',
+      imageURL: 'assets/mockups/Mask%20Group.svg',
       altText: 'Chat application',
       githubLink: 'https://github.com/KarmitP98/ChatApp',
       liveLink: 'https://baatein-7a.web.app/login',

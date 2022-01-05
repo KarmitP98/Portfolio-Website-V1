@@ -1,0 +1,48 @@
+$link-color: rgba(255, 255, 255, 0.8);
+$link-activated-color: rgba(255, 255, 255, 1);
+$subtitle: rgba(0, 0, 0, 0.8);
+
+.github-link-area {
+  width: 100%;
+  min-height: 10vh;
+  height: 100%;
+  padding: 2em 0;
+  background: var(--primary);
+  display: grid;
+  place-items: center;
+
+  h3 {
+    color: $subtitle;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    padding-bottom: 1em;
+  }
+
+  button.link-button {
+    background: black;
+    padding: 0.5em 1em;
+    color: $link-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border: none;
+    outline: none;
+    border-radius: 0.25em;
+    font-size: 1.25em;
+    cursor: pointer;
+
+    * {
+      fill: $link-color;
+    }
+
+    &:hover {
+      color: $link-activated-color;
+
+      * {
+        fill: $link-activated-color;
+      }
+    }
+  }
+}
