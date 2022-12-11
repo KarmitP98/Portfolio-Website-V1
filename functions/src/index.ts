@@ -35,7 +35,7 @@ exports.sendEmail = functions.firestore
   const emailData = {
     from: `${name} <${email}>`,
     to: 'karmit199@gmail.com',
-    subject: `[REQUIRED] ${name} is trying to reach out!`,
+    subject: `${email} ${name} is trying to reach out! `,
     html: `${message}`,
   };
 

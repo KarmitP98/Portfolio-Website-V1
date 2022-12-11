@@ -61,3 +61,94 @@ Before we get started, keep in mind:
 [info] 
 [info] +  Success! Logged into GitHub as KarmitP98 
 [info] 
+[debug] [2022-12-11T18:44:02.221Z] ----------------------------------------------------------------------
+[debug] [2022-12-11T18:44:02.223Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karmit_patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2022-12-11T18:44:02.223Z] CLI Version:   11.13.0
+[debug] [2022-12-11T18:44:02.223Z] Platform:      win32
+[debug] [2022-12-11T18:44:02.223Z] Node Version:  v14.21.1
+[debug] [2022-12-11T18:44:02.224Z] Time:          Sun Dec 11 2022 13:44:02 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-11T18:44:02.225Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-11T18:44:02.233Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-11T18:44:02.329Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-11T18:44:02.330Z] > authorizing via signed-in user (karmit199@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Angular_Programming\Portfolio\Portfolio-Website-V1
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-12-11T18:44:02.413Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-11T18:44:02.414Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-11T18:44:04.744Z] Using project from CLI flag: karmitp98
+[debug] [2022-12-11T18:44:04.745Z] > refreshing access token with scopes: []
+[debug] [2022-12-11T18:44:04.746Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-11T18:44:04.746Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T18:44:04.853Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-11T18:44:04.853Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-11T18:44:04.867Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/karmitp98 [none]
+[debug] [2022-12-11T18:44:05.176Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/karmitp98 200
+[debug] [2022-12-11T18:44:05.176Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/karmitp98 {"projectId":"karmitp98","projectNumber":"637204849653","displayName":"KarmitP","name":"projects/karmitp98","resources":{"hostingSite":"karmitp98","storageBucket":"karmitp98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_a61674a2-ac45-4ab7-b623-3f83f15aeab5"}
+[info] i  Using project karmitp98 (KarmitP) 
+[info] 
+=== Functions Setup
+[debug] [2022-12-11T18:44:05.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-11T18:44:05.182Z] > authorizing via signed-in user (karmit199@gmail.com)
+[debug] [2022-12-11T18:44:05.182Z] [iam] checking project karmitp98 for permissions ["firebase.projects.get"]
+[debug] [2022-12-11T18:44:05.183Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions [none]
+[debug] [2022-12-11T18:44:05.183Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions x-goog-quota-user=projects/karmitp98
+[debug] [2022-12-11T18:44:05.183Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-11T18:44:05.402Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions 200
+[debug] [2022-12-11T18:44:05.402Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-11T18:44:05.403Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-12-11T18:44:05.403Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/karmitp98
+[debug] [2022-12-11T18:44:05.404Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-12-11T18:44:05.404Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/karmitp98
+[debug] [2022-12-11T18:44:05.749Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/runtimeconfig.googleapis.com 200
+[debug] [2022-12-11T18:44:05.749Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-12-11T18:44:05.754Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/cloudfunctions.googleapis.com 200
+[debug] [2022-12-11T18:44:05.754Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/karmitp98/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[debug] [2022-12-11T18:44:23.790Z] ----------------------------------------------------------------------
+[debug] [2022-12-11T18:44:23.793Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\karmit_patel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2022-12-11T18:44:23.793Z] CLI Version:   11.13.0
+[debug] [2022-12-11T18:44:23.793Z] Platform:      win32
+[debug] [2022-12-11T18:44:23.793Z] Node Version:  v14.21.1
+[debug] [2022-12-11T18:44:23.794Z] Time:          Sun Dec 11 2022 13:44:23 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-11T18:44:23.794Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-11T18:44:23.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-11T18:44:23.868Z] > authorizing via signed-in user (karmit199@gmail.com)
+[debug] [2022-12-11T18:44:23.868Z] [iam] checking project karmitp98 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-12-11T18:44:23.870Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions [none]
+[debug] [2022-12-11T18:44:23.870Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions x-goog-quota-user=projects/karmitp98
+[debug] [2022-12-11T18:44:23.871Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-12-11T18:44:24.116Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions 200
+[debug] [2022-12-11T18:44:24.116Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/karmitp98:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-12-11T18:44:24.116Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/karmitp98/serviceAccounts/karmitp98@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-12-11T18:44:24.116Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/karmitp98/serviceAccounts/karmitp98@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-12-11T18:44:24.331Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/karmitp98/serviceAccounts/karmitp98@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-12-11T18:44:24.331Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/karmitp98/serviceAccounts/karmitp98@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'karmitp98'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
